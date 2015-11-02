@@ -28,8 +28,10 @@ Ceci est très important, car chaque système d'exploitation utilise ses propres
 Il est possible d'insérer plusieurs scripts sur la carte SD et d'en sélectionner un via un fichier de configuration.
 En créant le fichier "config.ini" et en écrivant ce qui suit, le script prendra le fichier demandé.
 
->[KeyHack]
->default=fichier.kh
+```
+[KeyHack]
+default=fichier.kh
+```
 
 Attention, le nom du fichier est limité à 7 caractères (sans compter l'extension).
 
