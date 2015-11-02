@@ -1,0 +1,33 @@
+REM			Shell Script
+
+PLATEFORM	OSX
+WRITE		LEFT_GUI SPACE
+DELAY		200
+STRING		terminal
+DELAY		200
+STRING		ls script.sh || echo "#/bin/sh\n" > script.sh
+DELAY		100
+STRING		chmod +x script.sh && ./script.sh
+DELAY		100
+WRITE		LEFT_GUI Q
+END			PLATEFORM
+
+PLATEFORM	LINUX
+WRITE		LEFT_CTRL LEFT_ALT T
+DELAY		200
+STRING		ls script.sh || echo "#/bin/sh\n" > script.sh
+DELAY		100
+STRING		chmod +x script.sh && ./script.sh
+DELAY		100
+WRITE		LEFT_CTRL LEFT_SHIFT W
+END			PLATEFORM
+
+PLATEFORM	WINDOWS
+WRITE		LEFT_GUI R
+DELAY		200
+STRING		ls script.sh || echo "#/bin/sh\n" > script.sh
+DELAY		100
+STRING		chmod +x script.sh && ./script.sh
+DELAY		100
+WRITE		LEFT_ALT F4
+END			PLATEFORM
